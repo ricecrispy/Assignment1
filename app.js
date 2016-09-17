@@ -27,7 +27,7 @@
     function countValidItem(itemArray) {
       var validItemCount = 0;
       for (var count = 0; count < itemArray.length; count++){
-        if (itemArray[count] != "") {
+        if (!(itemArray[count].trim().length === 0)) {
           validItemCount = validItemCount + 1;
         }
       }
